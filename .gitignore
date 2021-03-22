@@ -4,6 +4,9 @@ wp-content/uploads
 # ignore these plugins
 wp-content/plugins/hello.php
 wp-content/plugins/akismet
+wp-content/plugins/advanced-custom-fields-pro
+wp-content/plugins/wp-all-import-pro
+wp-content/plugins/wpai-acf-add-on
 
 # ignore specific themes
 wp-content/themes/twenty*/
