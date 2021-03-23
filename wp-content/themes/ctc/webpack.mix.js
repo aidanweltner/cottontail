@@ -14,7 +14,14 @@ require('@tinypixelco/laravel-mix-wp-blocks');
 
 mix
   .setPublicPath('./public')
-  .browserSync('sage.test');
+  .browserSync({
+    proxy: 'https://cottontail.test',
+    open: 'external',
+    https: {
+      key: "/Users/aidanweltner1/.config/valet/Certificates/cottontail.test.key",
+      cert: "/Users/aidanweltner1/.config/valet/Certificates/cottontail.test.crt",
+    }
+  });
 
 mix
   .sass('resources/styles/app.scss', 'styles')
