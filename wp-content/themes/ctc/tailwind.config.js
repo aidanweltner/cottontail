@@ -7,7 +7,7 @@ module.exports = {
       './resources/**/*.js',
     ],
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {},

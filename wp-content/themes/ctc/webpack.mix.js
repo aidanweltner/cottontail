@@ -40,6 +40,7 @@ mix
 
 mix
   .copyDirectory('resources/images', 'public/images')
+  .copyDirectory('resources/svg', 'public/svg')
   .copyDirectory('resources/fonts', 'public/fonts');
 
 mix
