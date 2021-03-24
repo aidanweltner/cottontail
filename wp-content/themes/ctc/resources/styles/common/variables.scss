@@ -1,5 +1,13 @@
 /** Colors */
-$brand-primary:         rgba(99, 102, 241);
+$brand-primary:         #272132;
+
+@media (prefers-color-scheme: dark) {
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after{
+    background-color: #F9EDE4 !important;
+  }
+}
 
 /** Box Model  */
 $spacer:                2rem;
