@@ -1,6 +1,9 @@
 @import 'tailwindcss/base';
 
+@import 'common/variables';
 @import 'common/global';
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";
 
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

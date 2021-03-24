@@ -1,0 +1,14 @@
+/** Colors */
+$brand-primary:         rgba(99, 102, 241);
+
+/** Box Model  */
+$spacer:                2rem;
+
+/* Hamburgers options */
+$hamburger-padding-x: 16px;
+$hamburger-padding-y: 0;
+$hamburger-layer-width: 20px;
+$hamburger-layer-height: 2px;
+$hamburger-layer-spacing: 4px;
+$hamburger-layer-color: $brand-primary;
+$hamburger-types: (collapse);
