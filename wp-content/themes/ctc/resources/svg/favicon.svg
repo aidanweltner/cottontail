@@ -9,7 +9,7 @@
   <defs>
     <style>
       .favicon {
-        fill: #1C1626;
+        fill: #433f49;
       }
       @media (prefers-color-scheme: dark) {
         .favicon {
