@@ -2,6 +2,15 @@ body {
   @apply font-sans bg-blue-300 dark:bg-plum-900;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-sans;
+}
+
 .brand {
   @apply text-plum-800 dark:text-cream-400;
 }

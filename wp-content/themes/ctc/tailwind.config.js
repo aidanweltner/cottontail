@@ -27,6 +27,10 @@ const ctcColors = {
     900: '#3E2A1D',
   },
 };
+const ctcFonts = {
+  sans: [ 'brandon-grotesque', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', "Segoe UI", 'Roboto', "Helvetica Neue", 'Arial', "Noto Sans", 'sans-serif', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+  mono: ['odisseia', 'ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+};
 
 module.exports = {
   purge: {
@@ -39,6 +43,10 @@ module.exports = {
   },
   darkMode: 'media',
   theme: {
+    fontFamily: {
+      sans: ctcFonts.sans,
+      mono: ctcFonts.mono,
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',

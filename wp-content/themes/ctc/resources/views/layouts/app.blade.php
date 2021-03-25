@@ -6,7 +6,7 @@
 
   @include('partials.header')
 
-    <main id="main" class="py-8 prose dark:prose-dark max-w-screen-lg main">
+    <main id="main" class="py-8 lg:py-24 prose dark:prose-dark max-w-screen-lg main">
       @yield('content')
     </main>
 
@@ -16,5 +16,5 @@
       </aside>
     @endif
 
-  @include('partials.footer')
+  {{-- @include('partials.footer') --}}
 </div>

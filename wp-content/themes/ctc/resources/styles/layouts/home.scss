@@ -1,7 +1,24 @@
-.home {
+.home .main {
   h1 {
     font-size: 1rem !important;
     margin-bottom: 0.2em !important;
+
+    @apply font-mono max-w-screen-md text-plum-500 dark:text-cream-500;
+  }
+
+  p {
+    @apply font-mono max-w-screen-sm;
+  }
+
+  h2 {
+    margin-top: 0.5em !important;
+
+    @apply max-w-screen-md;
+  }
+
+  hr {
+    margin-top: 4rem !important;
+    margin-bottom: 4rem !important;
   }
 
   .prose {
@@ -13,6 +30,20 @@
     &> h6,
     &> p {
       max-width: 65ch;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .home .main {
+    h2 {
+      font-size: 1.875rem !important;
+      line-height: 2.25rem !important;
+    }
+
+    hr {
+      margin-top: 6rem !important;
+      margin-bottom: 6rem !important;
     }
   }
 }
