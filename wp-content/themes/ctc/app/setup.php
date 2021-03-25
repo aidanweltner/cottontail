@@ -8,6 +8,16 @@ namespace App;
 
 use function Roots\asset;
 
+/* Head code */
+add_action('wp_head', function () {
+    ?>
+<link rel="icon" type="image/svg+xml"
+    href="<?php echo asset("/svg/favicon.svg")->uri(); ?>">
+<link rel="alternate icon"
+    href="<?php echo asset("/images/favicon.ico")->uri(); ?>">
+<?php
+});
+
 /**
  * Register the theme assets.
  *

@@ -1,11 +1,11 @@
 <header class="banner relative flex justify-between items-center py-4">
   <a class="brand inline-flex items-center font-sans font-bold text-2xl h-10 focus:bg-blue-400 dark:focus:bg-plum-800" href="{{ home_url('/') }}">
     @svg('svg.rabbit', 'h-8 mr-3')
-    {{ $siteName }}
+    {!! $siteName !!}
   </a>
 
   <p class="hidden md:block font-mono text-plum-800 dark:text-cream-300">
-    {{ $tagline }}
+    {!! $tagline !!}
   </p>
 
   <button class="hamburger hamburger--collapse h-10 focus:ring-2 focus:bg-blue-400 dark:focus:bg-plum-800 ring-blue-600" type="button" aria-label="Menu" aria-controls="navigation">
