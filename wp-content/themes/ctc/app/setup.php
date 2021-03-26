@@ -18,6 +18,23 @@ add_action('wp_head', function () {
 <?php
 });
 
+/* Register Block Category */
+add_filter('block_categories', function ($categories, $post) {
+    if ($post->post_type !== 'post') {
+        return $categories;
+    }
+    return array_merge(
+        $categories,
+        array(
+            array(
+                'slug' => 'cottontail',
+                'title' => __('Cottontail', 'sage'),
+                'icon'  => 'dashicons-block-default',
+            ),
+        )
+    );
+}, 10, 2);
+
 /**
  * Register the theme assets.
  *

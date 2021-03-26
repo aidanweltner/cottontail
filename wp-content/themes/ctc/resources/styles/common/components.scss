@@ -1,0 +1,15 @@
+.button {
+  @apply relative z-10 inline-flex items-center px-6 py-3 font-bold bg-yellow-200 dark:bg-brown-400 dark:border-brown-400 text-brown-800 dark:text-plum-900 border-0 mt-12 rounded-md #{!important};
+
+  svg {
+    @apply text-brown-600 dark:text-plum-500 transition-transform ease-in-out duration-100;
+  }
+
+  &:hover {
+    @apply transform translate-x-2 -translate-y-2 #{!important};
+
+    svg {
+      @apply transform translate-x-2;
+    }
+  }
+}
