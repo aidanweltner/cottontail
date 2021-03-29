@@ -62,6 +62,9 @@ add_action('init', function () {
           'new_item_name'     => __('New Service Name'),
           'menu_name'         => __('Services'),
       ),
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'show_in_rest'      => true,
       'rewrite'         => array(
           'slug'              => 'services', // This controls the base slug that will display before each term
           'with_front'        => false, // Don't display the category base before "/locations/"
@@ -85,6 +88,9 @@ add_action('init', function () {
           'new_item_name'     => __('New Site Type Name'),
           'menu_name'         => __('Site Types'),
       ),
+      'show_ui'           => true,
+      'show_admin_column' => true,
+      'show_in_rest'      => true,
       'rewrite'         => array(
           'slug'              => 'site-types', // This controls the base slug that will display before each term
           'with_front'        => false, // Don't display the category base before "/locations/"
