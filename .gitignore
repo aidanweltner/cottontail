@@ -16,6 +16,7 @@ node_modules/
 *.log
 *.sql
 *.sqlite
+wp-content/db.php
 
 # ignore environment specific files 
 /.htaccess
