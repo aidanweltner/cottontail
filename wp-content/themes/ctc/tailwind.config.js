@@ -11,6 +11,7 @@ const ctcColors = {
     300: '#8F8A99',
     400: '#6E6879',
     500: '#54505B',
+    700: '#393345',
     800: '#272132',
     900: '#1C1626',
   },
@@ -33,6 +34,7 @@ const ctcFonts = {
 };
 
 module.exports = {
+  important: true,
   purge: {
     content: [
       './app/**/*.php',
@@ -40,6 +42,10 @@ module.exports = {
       './resources/**/*.vue',
       './resources/**/*.js',
     ],
+    safelist: [
+      'prose',
+      'prose-dark',
+    ]
   },
   darkMode: 'media',
   theme: {
@@ -220,6 +226,8 @@ module.exports = {
   variants: {
     extend: {
       typography: [ 'dark' ],
+      textDecoration: ['group-hover'],
+      translate: ['group-hover'],
     },
   },
   plugins: [require('@tailwindcss/typography')],

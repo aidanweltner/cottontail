@@ -13,3 +13,18 @@
     }
   }
 }
+
+.project-card {
+  li {
+    &:first-of-type {
+      padding-left: 0 !important;
+
+      &::before {
+        content: none;
+        width: 0 !important;
+        height: 0 !important;
+        background-color: none !important;
+      }
+    }
+  }
+}

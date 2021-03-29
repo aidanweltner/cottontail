@@ -2,7 +2,8 @@
   Title: Button
   Description: Button for cottontail creative
   Category: cottontail
-  Icon: button  
+  Icon: button
+  EnqueueStyle: styles/blocks.css
 --}}
 @php
     $link = get_field('link');
