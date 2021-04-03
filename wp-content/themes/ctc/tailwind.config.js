@@ -67,6 +67,9 @@ module.exports = {
       brown: ctcColors.brown,
     },
     extend: {
+      minHeight: {
+        half: '50vh',
+      },
       typography: {
         DEFAULT: {
           css: {

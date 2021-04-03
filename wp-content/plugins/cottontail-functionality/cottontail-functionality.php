@@ -179,3 +179,17 @@ add_action('init', function () {
       'has_archive'       => 'testimonials',
     ));
 });
+
+/* Add Appropriate Theme Options Pages */
+add_action('after_setup_theme', function () {
+    /* Add ACF Options Sub Pages */
+    if (function_exists('acf_add_options_page')) {
+    
+        /* Options Page for Project CPT */
+        acf_add_options_sub_page(array(
+            'page_title'        => 'Project Options',
+            'parent_slug'       => 'edit.php?post_type=project',
+            'capability'        => 'manage_options'
+        ));
+    }
+});

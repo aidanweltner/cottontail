@@ -1,10 +1,14 @@
-<time class="updated" datetime="{{ get_post_time('c', true) }}">
-  {{ get_the_date() }}
-</time>
+<div class="flex space-x-2 lg:space-x-4 items-center font-mono text-sm">
+  <time class="updated" datetime="{{ get_post_time('c', true) }}">
+    {{ get_the_date( 'F Y' ) }}
+  </time>
 
-<p class="byline author vcard">
-  <span>{{ __('By', 'sage') }}</span>
-  <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
-    {{ get_the_author() }}
-  </a>
-</p>
+  <span>•</span>
+  
+  <p class="byline author vcard">
+    <span>{{ __('by', 'sage') }}</span>
+    <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
+      {{ get_the_author() }}
+    </a>
+  </p>
+</div>

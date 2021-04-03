@@ -40,6 +40,12 @@ class App extends Composer
 
     public function tagline()
     {
-        return get_bloginfo('description', 'display');
+        $project_tag = get_field('project_header_tagline', 'option');
+
+        if (get_post_type() == 'project' && !empty($project_tag)) {
+            return $project_tag;
+        } else {
+            return get_bloginfo('description', 'display');
+        }
     }
 }

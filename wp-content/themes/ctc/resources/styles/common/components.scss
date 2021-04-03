@@ -28,3 +28,14 @@
     }
   }
 }
+
+.services {
+  li {
+    &::before {
+      content: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      background-color: none !important;
+    }
+  }
+}
