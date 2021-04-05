@@ -115,6 +115,7 @@ add_action('init', function () {
           'author',
           'excerpt',
           'thumbnail',
+          'comments',
       ),
       'taxonomies'        => array(
           'category',
@@ -142,6 +143,7 @@ add_action('init', function () {
           'author',
           'excerpt',
           'thumbnail',
+          'comments',
       ),
       'taxonomies'        => array(
           'category',
@@ -169,6 +171,7 @@ add_action('init', function () {
           'author',
           'excerpt',
           'thumbnail',
+          'comments',
       ),
       'taxonomies'        => array(
           'category',
