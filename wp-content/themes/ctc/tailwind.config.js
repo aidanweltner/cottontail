@@ -231,6 +231,7 @@ module.exports = {
       typography: [ 'dark' ],
       textDecoration: ['group-hover'],
       translate: ['group-hover'],
+      opacity: ['group-hover', 'hover'],
     },
   },
   plugins: [require('@tailwindcss/typography')],

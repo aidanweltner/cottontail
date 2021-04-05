@@ -39,3 +39,38 @@
     }
   }
 }
+
+.prose-list-none {
+  li {
+    padding-left: 0 !important;
+
+    &::before {
+      content: none !important;
+      width: 0 !important;
+      height: 0 !important;
+      background-color: none !important;
+    }
+  }
+}
+
+.faqs-block {
+  li svg {
+    margin-left: -10px !important;
+    margin-top: 0.65px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .md-prose-list-none {
+    li {
+      padding-left: 0 !important;
+  
+      &::before {
+        content: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        background-color: none !important;
+      }
+    }
+  }
+}
