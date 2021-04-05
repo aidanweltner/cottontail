@@ -4,7 +4,11 @@
   @endphp
   @foreach ($services as $service)
       <li class="rounded-sm bg-white dark:bg-plum-800 px-3 py-1">
-        <a href="{{ get_term_link( $service, 'service') }}" title="{!! $service->name !!}" class="border-none text-plum-500 dark:text-cream-500">
+        <a
+          href="{{ get_term_link( $service, 'service') }}"
+          title="{!! $service->name !!}"
+          class="border-none text-plum-500 hover:text-brown-700 dark:text-cream-500 dark:hover:text-brown-400"
+        >
           {!! $service->name !!}
         </a>
       </li>
