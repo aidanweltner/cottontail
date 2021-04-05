@@ -20,7 +20,7 @@
       @foreach ($services as $service)
           <li>
             <a
-              href="#{{ get_term_link( $service ) }}"
+              href="{{ get_term_link( $service ) }}"
               title="{!! $service->name !!}"
               class="flex items-center group border-none font-mono lg:text-md text-plum-800 hover:text-plum-500 dark:text-brown-400 dark:hover:text-brown-600"
             >
