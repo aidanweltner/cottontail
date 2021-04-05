@@ -3,6 +3,17 @@
     <div>
       <h1 class="entry-title mb-0">
         {!! $title !!}
+        @if ( !empty($site) )
+          <a
+            href="{{ $site['url'] }}"
+            target="{{ $site['target'] }}"
+            title="{!! $site['title'] !!}"
+            class="inline-flex items-center border-none ml-3 mt-auto hover:border-b-2 text-plum-700 hover:text-plum-500 dark:text-brown-600 dark:hover:text-brown-400"
+          >
+            <span class="sr-only">{!! $site['title'] !!}</span>
+            @svg('svg.external-link', 'h-6 ml-1')
+          </a>
+        @endif
       </h1>
       @include('partials/entry-meta')
     </div>

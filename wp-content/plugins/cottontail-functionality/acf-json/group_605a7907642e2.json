@@ -23,6 +23,21 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
+        },
+        {
+            "key": "field_606b4b531346a",
+            "label": "Site Link",
+            "name": "site_link",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -42,5 +57,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1616542088
+    "modified": 1617644421
 }
