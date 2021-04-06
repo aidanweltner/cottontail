@@ -35,6 +35,7 @@ const ctcFonts = {
 
 module.exports = {
   important: true,
+  mode: 'jit',
   purge: {
     content: [
       './app/**/*.php',

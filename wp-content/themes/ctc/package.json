@@ -7,9 +7,9 @@
     "node": ">=12.14.0"
   },
   "scripts": {
-    "build": "mix",
+    "build": "TAILWIND_MODE=build mix",
     "build:production": "mix --production",
-    "start": "mix watch",
+    "start": "TAILWIND_MODE=watch mix watch",
     "hot": "mix watch --hot",
     "clear": "wp acorn optimize:clear",
     "test": "npm run lint",
@@ -37,7 +37,7 @@
     "sass-loader": "11.0.1",
     "stylelint": "^13.10.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.0.3"
+    "tailwindcss": "^2.1.1"
   },
   "dependencies": {
     "hamburgers": "^1.1.3",
