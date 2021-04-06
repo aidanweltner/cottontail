@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "TAILWIND_MODE=build mix",
-    "build:production": "mix --production",
+    "build:production": "TAILWIND_MODE=build mix --production",
     "start": "TAILWIND_MODE=watch mix watch",
     "hot": "mix watch --hot",
     "clear": "wp acorn optimize:clear",
