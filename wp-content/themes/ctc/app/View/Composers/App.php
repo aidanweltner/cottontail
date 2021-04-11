@@ -23,8 +23,9 @@ class App extends Composer
     public function with()
     {
         return [
-            'siteName' => $this->siteName(),
-            'tagline'  => $this->tagline(),
+            'siteName'  => $this->siteName(),
+            'tagline'   => $this->tagline(),
+            'copyright' => $this->copyright(),
         ];
     }
 
@@ -47,5 +48,10 @@ class App extends Composer
         } else {
             return get_bloginfo('description', 'display');
         }
+    }
+
+    public function copyright()
+    {
+        return get_field('copyright', 'option');
     }
 }

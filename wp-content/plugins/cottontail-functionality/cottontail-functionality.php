@@ -62,6 +62,7 @@ add_action('init', function () {
           'new_item_name'     => __('New Service Name'),
           'menu_name'         => __('Services'),
       ),
+      'public'            => true,
       'show_ui'           => true,
       'show_admin_column' => true,
       'show_in_rest'      => true,
@@ -88,6 +89,7 @@ add_action('init', function () {
           'new_item_name'     => __('New Site Type Name'),
           'menu_name'         => __('Site Types'),
       ),
+      'public'            => true,
       'show_ui'           => true,
       'show_admin_column' => true,
       'show_in_rest'      => true,
@@ -187,7 +189,16 @@ add_action('init', function () {
 add_action('after_setup_theme', function () {
     /* Add ACF Options Sub Pages */
     if (function_exists('acf_add_options_page')) {
-    
+
+        /* Main Theme Options Page */
+        acf_add_options_page(array(
+            'page_title'        => __('Cottontail Theme Options', 'acf'),
+            'menu_title'        => __('Theme Options', 'acf'),
+            'menu_slug'         => 'ctc-theme-options',
+            'capability'        => 'edit_posts',
+            'redirect'          => false,
+        ));
+
         /* Options Page for Project CPT */
         acf_add_options_sub_page(array(
             'page_title'        => 'Project Options',

@@ -1,0 +1,29 @@
+.site-footer {
+  a {
+    color: #1C1626;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom-width: 1px;
+    border-color: #3E2A1D;
+    transition: 0.3s ease;
+
+    &:hover {
+      color: #3E2A1D;
+      text-decoration: none;
+      border-bottom-width: 0;
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .site-footer {
+    a {
+      color: #FFFAF5;
+      border-color: #EBC6A5;
+
+      &:hover {
+        color: #EBC6A5;
+      }
+    }
+  }
+}
