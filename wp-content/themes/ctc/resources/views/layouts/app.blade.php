@@ -1,4 +1,4 @@
-<div class="max-w-screen-lg px-4 md:px-6 lg:px-8 mx-auto">
+<div class="max-w-screen-lg px-4 md:px-10 lg:px-8 mx-auto">
 
  {{--  <a class="sr-only focus:not-sr-only" href="#main">
     {{ __('Skip to content') }}

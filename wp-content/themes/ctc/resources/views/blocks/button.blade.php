@@ -8,7 +8,7 @@
 @php
     $link = get_field('link');
 @endphp
-<div class="bg-yellow-100 dark:bg-brown-600 rounded-md shadow-lg inline py-3">
+<div class="ctc-block bg-yellow-100 dark:bg-brown-600 rounded-md shadow-lg inline py-3">
   <a
     id="{{ $block['id']}}"
     class="button"

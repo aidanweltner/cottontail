@@ -10,7 +10,7 @@
     $title = get_field('title');
 @endphp
 
-<div id="{{ $block['id'] }}" class="pt-12 mb-4">
+<div id="{{ $block['id'] }}" class="ctc-block pt-12 mb-4">
   @if ( !empty($title) )
     <p class="font-sans font-bold text-xl mb-1 lg:mb-3">{!! $title !!}</p>
   @endif

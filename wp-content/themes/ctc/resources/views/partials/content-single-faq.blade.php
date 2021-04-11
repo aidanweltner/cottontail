@@ -1,7 +1,7 @@
 <article @php(post_class())>
   <header class="">
     <div class="flex flex-col-reverse">
-      <div class="md:flex items-center md:space-x-4 mt-8 lg:mt-12">
+      <div class="md:flex items-center md:space-x-4 mt-8 lg:mt-16">
         <h1 class="mb-0 font-normal font-mono text-xs lg:text-sm text-plum-500 dark:text-cream-400">
           {!! $title !!}
         </h1>
