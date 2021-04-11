@@ -1,6 +1,6 @@
 {
     "key": "group_607351bd589a7",
-    "title": "FAQs",
+    "title": "Main, sub & SVG layout",
     "fields": [
         {
             "key": "field_607351e4bbc3f",
@@ -76,6 +76,13 @@
                 "operator": "==",
                 "value": "faq"
             }
+        ],
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "service"
+            }
         ]
     ],
     "menu_order": 0,
@@ -86,5 +93,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618170583
+    "modified": 1618178472
 }

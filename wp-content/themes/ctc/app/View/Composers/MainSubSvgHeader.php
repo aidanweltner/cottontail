@@ -4,16 +4,16 @@ namespace App\View\Composers;
 
 use Roots\Acorn\View\Composer;
 
-class SingleFaq extends Composer
+class MainSubSvgHeader extends Composer
 {
-
-  /**
-   * List of views served by this composer.
-   *
-   * @var array
-   */
+    /**
+       * List of views served by this composer.
+       *
+       * @var array
+       */
     protected static $views = [
     'partials.content-single-faq',
+    'taxonomy-service',
   ];
 
 
@@ -31,18 +31,30 @@ class SingleFaq extends Composer
     ];
     }
 
+    public function theId()
+    {
+        if (is_tax()) {
+            $term = get_queried_object();
+            $id = $term->taxonomy . '_' . $term->term_id;
+        } else {
+            $id = get_the_ID();
+        }
+
+        return $id;
+    }
+
     public function mainHeading()
     {
-        return get_field('main_heading');
+        return get_field('main_heading', $this->theId());
     }
 
     public function subHeading()
     {
-        return get_field('sub_heading');
+        return get_field('sub_heading', $this->theId());
     }
 
     public function svgIcon()
     {
-        return get_field('svg_icon');
+        return get_field('svg_icon', $this->theId());
     }
 }
