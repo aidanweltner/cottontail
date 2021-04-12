@@ -8,7 +8,7 @@
           <li>
             <a
               href="{{ get_term_link( $service ) }}"
-              title="{!! $service->name !!}"
+              title="{!! 'Service: '.$service->name !!}"
               class="flex items-center group border-none font-mono lg:text-md text-plum-800 hover:text-plum-500 dark:text-brown-400 dark:hover:text-brown-600"
             >
               <span>{!! $service->name !!}</span>
@@ -28,7 +28,7 @@
         <li>
           <a
             href="{{ get_permalink( $faq->ID ) }}"
-            title="{!! get_the_title($faq->ID) !!}"
+            title="{!! 'FAQ: '.get_the_title($faq->ID) !!}"
             class="flex items-center group border-none font-mono lg:text-md text-plum-800 hover:text-plum-500 dark:text-brown-400 dark:hover:text-brown-600"
           >
             <span>{!! get_the_title($faq->ID) !!}</span>
