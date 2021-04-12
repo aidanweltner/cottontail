@@ -9,11 +9,11 @@
         @include('partials/entry-meta')
       @endif
     </div>
-    <div class="flex flex-col md:flex-row-reverse md:items-center">
-      @if ( $svg_icon != 'none' )
+    <div class="flex flex-col md:flex-row-reverse md:justify-end md:items-center">
+      @if ( $svg_icon != 'none' && !empty($svg_icon))
         @svg('svg.'.$svg_icon, 'w-1/2 md:w-1/3 md:pl-4 lg:pl-6')
       @endif
-      <div class="md:w-2/3 space-y-4">
+      <div class="{{$svg_icon != 'none' && !empty($svg_icon) ? 'md:w-2/3' : ''}} space-y-4">
         <h2 class="md:mt-0 text-3xl lg:text-5xl">
           @if ( !empty($main_heading) )
             {!! $main_heading !!}

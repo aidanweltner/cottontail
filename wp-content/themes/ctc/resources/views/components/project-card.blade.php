@@ -24,7 +24,9 @@
       </p>
     </div>
     <div class="flex justify-between items-center">
-      <p class="m-0 text-sm text-plum-500 dark:text-cream-500">{!! get_the_date( 'F Y', $project['id'] ) !!}</p>
+      <time class="m-0 text-sm text-plum-500 dark:text-cream-500" datetime="{{ get_post_time('c', true, $project['id']) }}">
+        {{ get_the_date( 'F Y', $project['id'] ) }}
+      </time>
       @svg('svg.arrow-narrow-right', 'text-brown-600 h-6 transform ease-in-out duration-100 group-hover:translate-x-2')
     </div>
   </article>

@@ -3,3 +3,7 @@
     @apply max-w-screen-sm;
   }
 }
+
+.post-card {
+  @apply h-full flex flex-col justify-between space-y-3 lg:space-y-6;
+}
