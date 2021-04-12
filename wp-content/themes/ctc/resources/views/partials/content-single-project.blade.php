@@ -1,6 +1,6 @@
 <article @php(post_class())>
   <header class="flex flex-col justify-between min-h-half">
-    <div>
+    <div class="space-y-4">
       <h1 class="entry-title mb-0">
         {!! $title !!}
         @if ( !empty($site) )
