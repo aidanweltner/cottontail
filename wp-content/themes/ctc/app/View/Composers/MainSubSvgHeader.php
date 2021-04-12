@@ -27,6 +27,7 @@ class MainSubSvgHeader extends Composer
         return [
         'main_heading'  => $this->mainHeading(),
         'sub_heading'   => $this->subHeading(),
+        'header_cta'    => $this->headerCta(),
         'svg_icon'      => $this->svgIcon(),
     ];
     }
@@ -51,6 +52,11 @@ class MainSubSvgHeader extends Composer
     public function subHeading()
     {
         return get_field('sub_heading', $this->theId());
+    }
+
+    public function headerCta()
+    {
+        return get_field('header_cta', $this->theId());
     }
 
     public function svgIcon()

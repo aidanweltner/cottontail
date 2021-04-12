@@ -41,6 +41,21 @@
             "new_lines": ""
         },
         {
+            "key": "field_6074abbe99c04",
+            "label": "Header CTA",
+            "name": "header_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
             "key": "field_607351ffbbc41",
             "label": "SVG Icon",
             "name": "svg_icon",
@@ -93,5 +108,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618178472
+    "modified": 1618258890
 }

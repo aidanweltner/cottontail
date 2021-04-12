@@ -30,5 +30,16 @@
     </div>
 
     {!! get_the_posts_navigation() !!}
+
+    @if( !empty($faq_section['faqs_services']['faqs']) && !empty($faq_section['faqs_services']['services']) )
+        <hr class="my-16 lg:my-24">
+        <h2 class="lg:text-3xl max-w-screen-md">{!! $faq_section['heading'] !!}</h2>
+        <p class="max-w-screen-sm">{!! $faq_section['paragraph'] !!}</p>
+        @include('components.faqs-services', $faq_section['faqs_services'])
+        @includeWhen(!empty($faq_section['cta']), 'components.button', [
+          'link' => $faq_section['cta']
+        ])
+    @endif
+
   @endif
 @endsection

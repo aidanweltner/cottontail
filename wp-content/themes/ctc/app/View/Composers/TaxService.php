@@ -27,6 +27,7 @@ class TaxService extends Composer
         return [
           'long_description'  => $this->longDescription(),
           'project_desc'      => $this->projectDesc(),
+          'faq_section'       => $this->faqSection(),
       ];
     }
 
@@ -46,5 +47,22 @@ class TaxService extends Composer
     public function projectDesc()
     {
         get_field('project_grid_description', $this->taxId());
+    }
+
+    public function faqSection()
+    {
+        $faq_section = [
+          'heading'       => get_field('faq_heading', $this->taxId()),
+          'paragraph'     => get_field('faq_paragraph', $this->taxId()),
+          'faqs_services' => [
+            'service_title'   => get_field('services_title', $this->taxId()),
+            'services'        => get_field('services', $this->taxId()),
+            'faq_title'       => get_field('faqs_title', $this->taxId()),
+            'faqs'            => get_field('faqs', $this->taxId()),
+          ],
+          'cta'           => get_field('faq_cta', $this->taxId()),
+        ];
+
+        return $faq_section;
     }
 }
