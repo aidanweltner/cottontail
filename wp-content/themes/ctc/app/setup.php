@@ -222,3 +222,9 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+add_action('pre_get_posts', function ($query) {
+    if (!is_admin() && is_tax('service') && $query->is_main_query()) {
+        $query->set('post_type', 'project');
+    }
+});
