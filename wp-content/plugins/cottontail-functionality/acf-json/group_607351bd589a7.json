@@ -98,6 +98,13 @@
                 "operator": "==",
                 "value": "service"
             }
+        ],
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/main-sub-svg"
+            }
         ]
     ],
     "menu_order": 0,
@@ -108,5 +115,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1618258890
+    "modified": 1620263059
 }
