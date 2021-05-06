@@ -82,9 +82,6 @@ class TaxService extends Composer
 
         $faqs = new \WP_Query($args);
 
-        /* var_dump($faqs);
-        die(); */
-
         return $faqs;
     }
 }

@@ -23,10 +23,11 @@ class App extends Composer
     public function with()
     {
         return [
-            'siteName'  => $this->siteName(),
-            'tagline'   => $this->tagline(),
-            'copyright' => $this->copyright(),
-            'menu_services'  => $this->services(),
+            'siteName'          => $this->siteName(),
+            'tagline'           => $this->tagline(),
+            'copyright'         => $this->copyright(),
+            'footer_contact'    => $this->footerContact(),
+            'menu_services'     => $this->services(),
         ];
     }
 
@@ -62,5 +63,27 @@ class App extends Composer
             'hide_empty'    => true,
         ]);
         return $terms;
+    }
+
+    public function footerContact()
+    {
+        $has_contact = get_field('has_contact', 'option');
+
+        $heading = get_field('contact_heading', 'option');
+        $description = get_field('contact_description', 'option');
+        $button_link = get_field('contact_button', 'option');
+
+        if ($has_contact && !empty($heading)) {
+            return [
+                'heading'       => $heading,
+                'description'   => $description,
+                'button'        => [
+                    'link'      => $button_link,
+                    'id'        => 'footer-contact',
+                ],
+            ];
+        } else {
+            return null;
+        }
     }
 }
