@@ -71,6 +71,12 @@ module.exports = {
       minHeight: {
         half: '50vh',
       },
+      spacing: {
+        'screen-half': '50vw',
+      },
+      zIndex: {
+        '60': 60,
+      },
       typography: {
         DEFAULT: {
           css: {

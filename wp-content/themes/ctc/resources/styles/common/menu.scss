@@ -1,0 +1,58 @@
+.services {
+  &> button {
+    &.open {
+      span {
+        @apply border-plum-400 dark:border-brown-600 #{!important};
+      }
+
+      svg {
+        @apply rotate-180 #{!important};
+      }
+    }
+
+    &.closed {
+      svg {
+        @apply rotate-0 #{!important};
+      }
+    }
+  }
+  
+  &> ul {
+    &.closed {
+      @apply hidden;
+    }
+
+    &.open {
+      li {
+        display: block !important;
+        animation-name: animateIn;
+        animation-duration: 350ms;
+        animation-delay: calc(var(--animation-order) * 45ms);
+        animation-fill-mode: both;
+        animation-timing-function: ease-in-out;
+      }
+    }
+  }
+}
+
+@keyframes animateIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-8px);
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animateOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6) translateY(-8px);
+  }
+}

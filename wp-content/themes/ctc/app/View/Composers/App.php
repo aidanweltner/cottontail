@@ -26,6 +26,7 @@ class App extends Composer
             'siteName'  => $this->siteName(),
             'tagline'   => $this->tagline(),
             'copyright' => $this->copyright(),
+            'menu_services'  => $this->services(),
         ];
     }
 
@@ -53,5 +54,13 @@ class App extends Composer
     public function copyright()
     {
         return get_field('copyright', 'option');
+    }
+
+    public function services()
+    {
+        $terms = get_terms('service', [
+            'hide_empty'    => true,
+        ]);
+        return $terms;
     }
 }

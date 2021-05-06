@@ -2,6 +2,10 @@ body {
   @apply font-sans bg-blue-300 dark:bg-plum-900 min-h-screen overflow-x-hidden w-screen relative;
 }
 
+#app {
+  padding-top: 72px;
+}
+
 h1,
 h2,
 h3,
