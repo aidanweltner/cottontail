@@ -28,6 +28,7 @@ class TaxService extends Composer
           'long_description'  => $this->longDescription(),
           'project_desc'      => $this->projectDesc(),
           'faq_section'       => $this->faqSection(),
+          'faqs'              => $this->faqs(),
       ];
     }
 
@@ -64,5 +65,26 @@ class TaxService extends Composer
         ];
 
         return $faq_section;
+    }
+
+    public function faqs()
+    {
+        $args = [
+          'post_type'   => 'faq',
+          'tax_query'   => [
+            [
+              'taxonomy'  => 'service',
+              'field'     => 'slug',
+              'terms'     => [ get_query_var('service') ],
+            ],
+          ],
+        ];
+
+        $faqs = new \WP_Query($args);
+
+        /* var_dump($faqs);
+        die(); */
+
+        return $faqs;
     }
 }
