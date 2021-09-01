@@ -2,7 +2,7 @@
   Title: Callout
   Description: Add a callout section
   Category: cottontail
-  Icon: format-quote
+  Icon: align-center
   Mode: preview
   SupportsInnerBlocks: true
 --}}
