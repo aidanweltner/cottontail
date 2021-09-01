@@ -3,7 +3,6 @@
   Description: List of services, selected or in post
   Category: cottontail
   Icon: editor-ul
-  EnqueueStyle: styles/blocks.css
 --}}
 @php
     $service_title = get_field('title');

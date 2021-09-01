@@ -3,7 +3,6 @@
   Description: Add three featured projects to any page
   Category: cottontail
   Icon: category
-  EnqueueStyle: styles/blocks.css
 --}}
 @php
     $projects = get_field('projects');

@@ -3,7 +3,6 @@
   Description: Short section of selected FAQs
   Category: cottontail
   Icon: editor-ul
-  EnqueueStyle: styles/blocks.css
 --}}
 @php
     $faqs_services = [

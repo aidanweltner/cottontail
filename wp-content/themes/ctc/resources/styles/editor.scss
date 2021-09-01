@@ -9,3 +9,7 @@
     @apply font-sans #{!important};
   }
 }
+
+.callout-block {
+  @apply bg-gray-200 p-4 rounded-md;
+}

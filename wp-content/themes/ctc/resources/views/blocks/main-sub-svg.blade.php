@@ -3,7 +3,6 @@
   Description: Add main heading & SVG icon to layout
   Category: cottontail
   Icon: align-pull-right
-  EnqueueStyle: styles/blocks.css
 --}}
 @php
   $main_heading  = get_field('main_heading');

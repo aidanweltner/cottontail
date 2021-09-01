@@ -60,6 +60,22 @@
   }
 }
 
+.testimonial-block {
+  blockquote p {
+    @apply m-0 #{!important};
+  }
+}
+
+.callout-block {
+  & > :first-child {
+    @apply mt-0;
+  }
+
+  & > :last-child {
+    @apply mb-0;
+  }
+}
+
 @media (min-width: 768px) {
   .md-prose-list-none {
     li {

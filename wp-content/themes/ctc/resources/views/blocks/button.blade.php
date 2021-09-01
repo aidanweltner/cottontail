@@ -3,7 +3,6 @@
   Description: Button for cottontail creative
   Category: cottontail
   Icon: button
-  EnqueueStyle: styles/blocks.css
 --}}
 @php
     $button = [
