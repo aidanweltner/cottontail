@@ -1,0 +1,21 @@
+.wp-block-image {
+  img {
+    @apply rounded-md shadow-md #{!important};
+  }
+}
+
+.wp-block-columns {
+  @apply max-w-screen-lg #{!important};
+
+  .wp-block-column > * {
+    @apply h-full;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .wp-block-image {
+    img {
+      @apply shadow-lg #{!important};
+    }
+  }
+}

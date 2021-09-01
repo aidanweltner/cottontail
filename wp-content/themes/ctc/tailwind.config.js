@@ -46,6 +46,7 @@ module.exports = {
     safelist: [
       'prose',
       'prose-dark',
+      'wp-block-image', 'wp-block-columns',
     ]
   },
   darkMode: 'media',
@@ -112,12 +113,12 @@ module.exports = {
               '&:hover': {
                 color: ctcColors.brown[900],
                 textDecoration: 'none',
-                borderBottomWidth: '0',
+                borderColor: 'transparent',
               },
               '&:focus': {
                 color: ctcColors.brown[900],
                 textDecoration: 'none',
-                borderBottomWidth: '0',
+                borderColor: 'transparent',
               }
             },
             'ol li': {
@@ -152,6 +153,14 @@ module.exports = {
             blockquote: {
               color: ctcColors.plum[500],
               borderLeftColor: colors.warmGray[700],
+            },
+            figure: {
+              figcaption: {
+                color: ctcColors.plum[900],
+                textAlign: 'right',
+                marginLeft: '0.5rem',
+                marginRight: '0.5rem',
+              }
             },
           },
         },
@@ -189,12 +198,12 @@ module.exports = {
               '&:hover': {
                 color: ctcColors.brown[400],
                 textDecoration: 'none',
-                borderBottomWidth: '0',
+                borderColor: 'transparent',
               },
               '&:focus': {
                 color: ctcColors.brown[400],
                 textDecoration: 'none',
-                borderBottomWidth: '0',
+                borderColor: 'transparent',
               }
             },
             'ol li': {
@@ -227,6 +236,9 @@ module.exports = {
             blockquote: {
               color: ctcColors.cream[500],
               borderLeftColor: colors.warmGray[700],
+            },
+            figure: {
+              figcaption: { color: ctcColors.cream[300], }
             },
           },
         },
