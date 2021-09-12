@@ -47,6 +47,7 @@ module.exports = {
       'prose',
       'prose-dark',
       'wp-block-image', 'wp-block-columns',
+      'wpcf7', 'form-50',
     ]
   },
   darkMode: 'media',

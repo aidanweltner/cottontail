@@ -1,0 +1,53 @@
+.wpcf7 {
+  form {
+    @apply max-w-screen-md w-full flex flex-wrap;
+
+    & > {
+      * {
+        @apply pb-2 lg:pb-4 lg:pr-4 h-auto;
+      }
+
+      br {
+        display: none;
+      }
+
+      [class*=form-] {
+        @apply w-full;
+      }
+
+      .form-50 {
+        @apply lg:w-1/2;
+      }
+    }
+
+    .submit-wrap {
+      @apply p-0 justify-self-end ml-auto lg:mr-4 w-auto flex flex-row-reverse;
+
+      input[type="submit"] {
+        @apply m-0 shadow-lg transform-none items-center px-6 py-3 font-bold bg-yellow-200 dark:bg-brown-400 dark:border-brown-400 text-brown-800 dark:text-plum-900 border-0 rounded-md transition-colors ease-in-out;
+
+        &:hover,
+        &:focus {
+          @apply ring-2 ring-plum-300 dark:ring-cream-500 bg-yellow-100 dark:bg-brown-600;
+        }
+      }
+    }
+
+    .wpcf7-form-control-wrap {
+      @apply w-full;
+
+      input[type],
+      textarea {
+        @apply w-full p-2 bg-white dark:bg-plum-800 rounded-md text-plum-500 dark:text-cream-400 font-mono shadow-md dark:shadow-lg;
+
+        &:focus {
+          @apply ring-2 ring-plum-300 dark:ring-cream-500 border-none;
+        }
+      }
+    }
+
+    label {
+      @apply sr-only;
+    }
+  }
+}

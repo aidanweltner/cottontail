@@ -49,3 +49,13 @@ servicesBtn.addEventListener( 'click', () => {
     servicesOpen = false;
   }
 });
+
+if ( document.body.classList.contains('contact') ){
+  var urlParams = new URLSearchParams(window.location.search);
+
+  if ( urlParams.has('subject') ) {
+    var yourSubject = document.querySelector('[name="your-subject"]');
+
+    yourSubject.setAttribute( 'value', urlParams.get('subject') );
+  }
+}
