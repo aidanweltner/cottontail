@@ -18,13 +18,3 @@ h6 {
 .brand {
   @apply text-plum-800 dark:text-cream-400;
 }
-
-.svg-bg {
-  fill: #B2C4D2;
-}
-
-@media (prefers-color-scheme: dark) {
-  .svg-bg {
-    fill: #8F8A99;
-  }
-}

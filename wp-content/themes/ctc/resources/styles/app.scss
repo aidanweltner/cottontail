@@ -3,18 +3,15 @@
 @tailwind components;
 
 @layer base {
-  @import 'common/variables';
-  @import 'common/global';
-}
-
-@layer components {
-  @import 'common/components';
-  @import 'common/menu';
-  @import 'common/wp_classes';
-  @import 'layouts/posts';
-  @import 'layouts/footer';
-  @import 'layouts/forms';
-  @import 'layouts/home';
+  @import "common/variables";
+  @import "common/global";
+  @import "common/components";
+  @import "common/menu";
+  @import "common/wp_classes";
+  @import "layouts/posts";
+  @import "layouts/footer";
+  @import "layouts/forms";
+  @import "layouts/home";
   @import "~hamburgers/_sass/hamburgers/hamburgers";
 }
 
