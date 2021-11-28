@@ -48,8 +48,8 @@ add_action('init', function () {
 
     /* Register Services Taxonomy */
     register_taxonomy('service', array( 'post', 'project', 'faq', 'testimonial' ), array(
-      'hierarchical'      => true,
-      'labels'            => array(
+      'hierarchical'        => true,
+      'labels'              => array(
           'name'              => _x('Services', 'taxonomy general name'),
           'singular_name'     => _x('Service', 'taxonomy singular name'),
           'search_items'      =>  __('Search Services'),
@@ -62,15 +62,12 @@ add_action('init', function () {
           'new_item_name'     => __('New Service Name'),
           'menu_name'         => __('Services'),
       ),
-      'public'            => true,
-      'show_ui'           => true,
-      'show_admin_column' => true,
-      'show_in_rest'      => true,
-      'rewrite'         => array(
-          'slug'              => 'services', // This controls the base slug that will display before each term
-          'with_front'        => false, // Don't display the category base before "/locations/"
-          'hierarchical'      => true // This will allow URL's like "/locations/boston/cambridge/"
-      ),
+      'public'              => true,
+      'exclude_from_search' => false,
+      'has_archive'         => true,
+      'show_ui'             => true,
+      'show_admin_column'   => true,
+      'show_in_rest'        => true,
     ));
 
     /* Register Services Taxonomy */

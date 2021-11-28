@@ -16,9 +16,6 @@ class MainSubSvgHeader extends Composer
         'taxonomy-service',
     ];
 
-    protected $id = 0;
-
-
     /**
      * Data to be passed to view before rendering, but after merging.
      *
@@ -39,36 +36,36 @@ class MainSubSvgHeader extends Composer
     {
         if (is_tax()) {
             $term = get_queried_object();
-            $this->id = $term->taxonomy . '_' . $term->term_id;
+            $id = $term->taxonomy . '_' . $term->term_id;
         } else {
-            $this->id = get_the_ID();
+            $id = get_the_ID();
         }
 
-        return $this->id;
+        return $id;
     }
 
     public function preHeading()
     {
-        return get_field('pre_heading', $this->id);
+        return get_field('pre_heading', $this->theId());
     }
 
     public function mainHeading()
     {
-        return get_field('main_heading', $this->id);
+        return get_field('main_heading', $this->theId());
     }
 
     public function subHeading()
     {
-        return get_field('sub_heading', $this->id);
+        return get_field('sub_heading', $this->theId());
     }
 
     public function headerCta()
     {
-        return get_field('header_cta', $this->id);
+        return get_field('header_cta', $this->theId());
     }
 
     public function svgIcon()
     {
-        return get_field('svg_icon', $this->id);
+        return get_field('svg_icon', $this->theId());
     }
 }
