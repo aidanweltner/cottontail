@@ -1,17 +1,21 @@
-@import 'tailwindcss/base';
+@tailwind base;
 
-@import 'common/components';
-@import 'common/variables';
-@import 'common/global';
-@import 'common/menu';
-@import 'common/wp_classes';
+@tailwind components;
 
-@import 'layouts/posts';
-@import 'layouts/footer';
-@import 'layouts/forms';
-@import 'layouts/home';
+@layer base {
+  @import 'common/variables';
+  @import 'common/global';
+}
 
-@import "~hamburgers/_sass/hamburgers/hamburgers";
+@layer components {
+  @import 'common/components';
+  @import 'common/menu';
+  @import 'common/wp_classes';
+  @import 'layouts/posts';
+  @import 'layouts/footer';
+  @import 'layouts/forms';
+  @import 'layouts/home';
+  @import "~hamburgers/_sass/hamburgers/hamburgers";
+}
 
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind utilities;
