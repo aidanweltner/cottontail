@@ -3,6 +3,25 @@
     "title": "Main, sub & SVG layout",
     "fields": [
         {
+            "key": "field_61a3e885bea20",
+            "label": "Pre Heading",
+            "name": "pre_heading",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_607351e4bbc3f",
             "label": "Main heading",
             "name": "main_heading",
@@ -115,5 +134,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1620263059
+    "modified": 1638132049
 }

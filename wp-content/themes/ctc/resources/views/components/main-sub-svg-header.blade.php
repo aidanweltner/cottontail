@@ -1,9 +1,18 @@
 <header>
   <div class="flex flex-col-reverse">
     <div class="md:flex items-center md:space-x-4 mt-8 lg:mt-16">
-      <h1 class="mb-0 font-normal font-mono text-xs lg:text-sm text-plum-500 dark:text-cream-400">
-        @include('partials.page-header')
-      </h1>
+      @if ( isset($pre_heading) && $pre_heading )
+        <h1 class="pre-heading">
+          {!! $pre_heading !!}
+        </h1>
+        <h2 class="mb-0 font-normal font-mono text-xs lg:text-sm text-plum-500 dark:text-cream-400">
+          @include('partials.page-header')
+        </h2>
+      @else
+        <h1 class="mb-0 font-normal font-mono text-xs lg:text-sm text-plum-500 dark:text-cream-400">
+          @include('partials.page-header')
+        </h1>
+      @endif
       @if ( is_tax() == false )
         <span class="hidden md:block">•</span>
         @include('partials/entry-meta')

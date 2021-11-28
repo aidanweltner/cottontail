@@ -5,10 +5,7 @@
   Icon: align-pull-right
 --}}
 @php
-  $main_heading  = get_field('main_heading');
-  $sub_heading   = get_field('sub_heading');
-  $header_cta    = get_field('header_cta');
-  $svg_icon      = get_field('svg_icon');
+  extract(get_fields());
 @endphp
 <div id="{{ $block['id'] }}">
   <div class="flex flex-col md:flex-row-reverse md:justify-end md:items-center">
@@ -16,6 +13,11 @@
       @svg('svg.'.$svg_icon, 'w-1/2 md:w-1/3 md:pl-4 lg:pl-6')
     @endif
     <div class="{{$svg_icon != 'none' && !empty($svg_icon) ? 'md:w-2/3' : ''}} space-y-4">
+      @if ( isset($pre_heading) && $pre_heading )
+          <h1 class="pre-heading">
+            {!! $pre_heading !!}
+          </h1>
+      @endif
       {{-- Main H2 tag --}}
       <h2 class="md:mt-0 text-3xl lg:text-5xl">
         @if ( !empty($main_heading) )
