@@ -11,7 +11,7 @@
 add_filter(
     'be_media_from_production_url',
     function () {
-        return 'https://cottontailcreative.com';
+        return 'https://cottontailcrea.wpengine.com/';
     }
 );
 
