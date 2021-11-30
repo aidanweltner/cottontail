@@ -17,9 +17,9 @@
     @if ( get_field('source') )
         <p>
           <span class="font-bold">{!! get_field('source') !!}</span>
-          @if ( get_field('source_postition') )
+          @if ( get_field('source_position') )
             <br>
-            <span>{!! get_field('source_postition') !!}</span>
+            <span>{!! get_field('source_position') !!}</span>
           @endif
         </p>
     @endif
