@@ -49,7 +49,19 @@ class Post extends Composer
         }
 
         if (is_archive()) {
-            return get_the_archive_title();
+            $project_archive = get_field('project_archive_title', 'option');
+            $faq_archive = get_field('faq_archive_title', 'option');
+            $testimonial_archive = get_field('testimonial_archive_title', 'option');
+
+            if ( is_post_type_archive('project') && !empty($project_archive) ) {
+                return $project_archive;
+            } elseif ( is_post_type_archive('faq') && !empty($faq_archive) ) {
+                return $faq_archive;
+            } elseif ( is_post_type_archive('testimonial') && !empty($testimonial_archive) ) {
+                return $testimonial_archive;
+            } else {
+                return get_the_archive_title();
+            }
         }
 
         if (is_search()) {
