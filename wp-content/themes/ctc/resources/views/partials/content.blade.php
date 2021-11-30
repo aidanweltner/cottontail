@@ -4,9 +4,15 @@
       <a href="{{ get_permalink() }}" title="{{ $title }}">
         <h2 class="mt-0 text-brown-800 dark:text-brown-400 group-hover:underline">{!! $title !!}</h2>
       </a>
-      <p class="text-xs text-plum-500 dark:text-cream-400 font-bold font-mono">
-        {!! get_the_excerpt() !!}
-      </p>
+      @if( get_post_type() == 'testimonial' )
+        <div class="font-mono text-xs text-plum-500 dark:text-cream-400 font-bold">
+          @php(the_content())
+        </div>
+      @else
+        <p class="text-xs text-plum-500 dark:text-cream-400 font-bold font-mono">
+          {!! get_the_excerpt() !!}
+        </p>
+      @endif
     </div>
     <div class="flex justify-between items-center">
       <time class="m-0 text-sm text-plum-500 dark:text-cream-500" datetime="{{ get_post_time('c', true) }}">
