@@ -64,6 +64,8 @@ class TaxService extends Composer
           'cta'           => get_field('faq_cta', $this->taxId()),
         ];
 
+        /* Add ability to select common links */
+
         return $faq_section;
     }
 

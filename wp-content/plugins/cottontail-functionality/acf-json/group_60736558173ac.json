@@ -205,6 +205,52 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_61a57aa6ac1eb",
+            "label": "Global Variables",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61a57ab2ac1ec",
+            "label": "Request a consultation CTA",
+            "name": "request_a_consultation_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_61a57af4ac1ed",
+            "label": "Get a quote CTA",
+            "name": "get_a_quote_cta",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -224,5 +270,5 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638233895
+    "modified": 1638234914
 }
