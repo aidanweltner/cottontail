@@ -5,7 +5,6 @@
 @tailwind utilities;
 
 @layer components {
-  @import "common/variables";
   @import "common/global";
   @import "common/components";
   @import "common/menu";
@@ -14,6 +13,7 @@
   @import "layouts/home";
 }
 
+@import "common/variables";
 @import "common/wp_classes";
 @import "layouts/forms";
 @import "~hamburgers/_sass/hamburgers/hamburgers";
