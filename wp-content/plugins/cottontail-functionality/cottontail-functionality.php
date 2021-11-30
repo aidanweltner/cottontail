@@ -150,7 +150,11 @@ add_action('init', function () {
           'service',
           'site-type',
       ),
-      'has_archive'       => 'faqs',
+      'has_archive'       => 'common-issues',
+      'rewrite'           => [
+            'slug'        => 'common-issue',
+            'with_front'   => false,  
+      ],
     ));
 
     /* Register Testimonial Post Type */

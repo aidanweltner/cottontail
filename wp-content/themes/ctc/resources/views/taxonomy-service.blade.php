@@ -41,7 +41,7 @@
         ])
     @elseif( empty($faq_section['faqs_services']['faqs']) && $faqs->have_posts() )
         <p class="font-sans font-bold text-xl mt-12 lg:mt-16 mb-1 lg:mb-3">
-          {!! __('Related FAQs', 'sage') !!}
+          {!! __('Related common issues', 'sage') !!}
         </p>
 
         <ul>
