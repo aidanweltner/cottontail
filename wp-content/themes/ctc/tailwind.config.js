@@ -43,12 +43,12 @@ module.exports = {
       './resources/**/*.vue',
       './resources/**/*.js',
     ],
-    safelist: [
-      'prose',
-      'prose-dark',
-      'wp-block-image', 'wp-block-columns',
-      'wpcf7', 'form-50',
-    ]
+    options: {
+      safelist: [
+        'prose',
+        'prose-dark',
+      ]
+    },
   },
   darkMode: 'media',
   theme: {
