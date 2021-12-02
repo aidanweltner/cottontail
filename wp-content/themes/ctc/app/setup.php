@@ -19,10 +19,7 @@ add_action('wp_head', function () {
 });
 
 /* Register Block Category */
-add_filter('block_categories', function ($categories, $post) {
-    if ($post->post_type !== 'post') {
-        return $categories;
-    }
+add_filter('block_categories_all', function ($categories, $post) {
     return array_merge(
         $categories,
         array(

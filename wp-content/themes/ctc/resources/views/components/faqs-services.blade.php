@@ -1,4 +1,4 @@
-<div class="ctc-block flex flex-col lg:flex-row lg:space-x-4 lg:space-x-8 faqs-block">
+<div class="ctc-block flex flex-col lg:flex-row md:space-x-4 lg:space-x-8 faqs-block">
   <div class="w-full lg:w-1/3">
     <h3 class="font-sans">
       {!! $service_title !!}
@@ -13,7 +13,7 @@
             >
               <span>{!! $service->name !!}</span>
               <div class="hidden md:block ml-2 border-b border-plum-300 dark:border-brown-600 flex-grow"></div>
-              @svg('svg.chevron-right', 'justify-self-end h-4 text--plum-300 dark:text-brown-600 opacity-0 md:group-hover:opacity-100 transition-opacity')
+              @svg('svg.chevron-right', 'justify-self-end h-4 text--plum-300 dark:text-brown-600 opacity-0 md:group-hover:opacity-100 transition-opacity hide-svg')
             </a>
           </li>
       @endforeach
@@ -33,7 +33,7 @@
           >
             <span>{!! get_the_title($faq->ID) !!}</span>
             <div class="hidden md:block ml-2 border-b border-plum-300 dark:border-brown-600 flex-grow"></div>
-            @svg('svg.chevron-right', 'justify-self-end h-4 text--plum-300 dark:text-brown-600 opacity-0 md:group-hover:opacity-100 transition-opacity')
+            @svg('svg.chevron-right', 'justify-self-end h-4 text--plum-300 dark:text-brown-600 opacity-0 md:group-hover:opacity-100 transition-opacity hide-svg')
           </a>
         </li>
       @endforeach

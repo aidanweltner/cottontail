@@ -13,3 +13,7 @@
 .callout-block {
   @apply bg-gray-200 p-4 rounded-md;
 }
+
+.hide-svg {
+  @apply hidden;
+}

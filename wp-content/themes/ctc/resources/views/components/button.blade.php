@@ -5,6 +5,6 @@
     title="{{ $link['title'] }}"
     {{ $link['target'] ? 'target="'.$link['target'].'"' : ''}} >
       {!! $link['title'] !!}
-      @svg( 'svg.arrow-narrow-right', 'h-5 ml-3')
+      @svg( 'svg.arrow-narrow-right', 'h-5 ml-3 hide-svg')
   </a>
 </div>
