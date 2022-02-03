@@ -38,7 +38,8 @@
     "sass-loader": "11.0.1",
     "stylelint": "^13.10.0",
     "stylelint-config-standard": "^20.0.0",
-    "tailwindcss": "^2.1.1"
+    "tailwindcss": "^2.1.1",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "hamburgers": "^1.1.3",
