@@ -251,6 +251,79 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_61fc09c9c49c2",
+            "label": "Code Injection",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_61fc09dbc49c3",
+            "label": "HEAD Code Injection",
+            "name": "head_code_injection",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_61fc09efc49c4",
+            "label": "Body Code Injection",
+            "name": "body_code_injection",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_61fc09ffc49c5",
+            "label": "Footer Code Injection",
+            "name": "footer_code_injection",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -270,5 +343,6 @@
     "hide_on_screen": "",
     "active": true,
     "description": "",
-    "modified": 1638234914
+    "show_in_rest": 0,
+    "modified": 1643907851
 }

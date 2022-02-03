@@ -8,16 +8,6 @@ namespace App;
 
 use function Roots\asset;
 
-/* Head code */
-add_action('wp_head', function () {
-    ?>
-<link rel="icon" type="image/svg+xml"
-    href="<?php echo asset("/svg/favicon.svg")->uri(); ?>">
-<link rel="alternate icon"
-    href="<?php echo asset("/images/favicon-blue.ico")->uri(); ?>">
-<?php
-});
-
 /* Register Block Category */
 add_filter('block_categories_all', function ($categories, $post) {
     return array_merge(
@@ -223,5 +213,38 @@ add_action('widgets_init', function () {
 add_action('pre_get_posts', function ($query) {
     if (!is_admin() && is_tax('service') && $query->is_main_query()) {
         $query->set('post_type', 'project');
+    }
+});
+
+/**
+ * 
+ * Code Injections
+ * 
+ * */
+
+/* code for head */
+add_action('wp_head', function () {
+    $global_head = get_field('head_code_injection', 'option');
+
+    if (!empty($global_head)) {
+        echo $global_head;
+    }
+});
+
+/* code for body */
+add_action('wp_body_open', function () {
+    $global_body = get_field('body_code_injections', 'option');
+
+    if (!empty($global_body)) {
+        echo $global_body;
+    }
+});
+
+/* code for footer */
+add_action('wp_footer', function () {
+    $global_footer = get_field('footer_code_injection', 'option');
+
+    if (!empty($global_footer)) {
+        echo $global_footer;
     }
 });
