@@ -1,4 +1,4 @@
-<div class="ctc-block flex flex-col lg:flex-row md:space-x-4 lg:space-x-8 faqs-block">
+<div class="ctc-block flex flex-col lg:flex-row lg:gap-8 faqs-block">
   <div class="w-full lg:w-1/3">
     <h3 class="font-sans">
       {!! $service_title !!}

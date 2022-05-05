@@ -159,8 +159,8 @@ module.exports = {
               figcaption: {
                 color: ctcColors.plum[900],
                 textAlign: 'right',
-                marginLeft: '0.5rem',
-                marginRight: '0.5rem',
+                marginLeft: '0',
+                marginRight: '0',
               }
             },
           },

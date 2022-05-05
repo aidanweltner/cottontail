@@ -14,7 +14,7 @@
     @endif
     <div class="{{$svg_icon != 'none' && !empty($svg_icon) ? 'md:w-2/3' : ''}} space-y-4">
       @if ( isset($pre_heading) && $pre_heading )
-          <h1 class="pre-heading">
+          <h1 class="pre-heading {{$svg_icon != 'none' && !empty($svg_icon) ? 'mt-4 sm:mt-0' : ''}}">
             {!! $pre_heading !!}
           </h1>
       @endif
