@@ -20,7 +20,6 @@
           @if (has_nav_menu('primary_navigation'))
             {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav space-y-3 text-plum-900 dark:text-cream-300', 'echo' => false]) !!}
           @endif
-          @includeWhen( !empty($menu_services), 'components.menu.service-list')
         </nav>
       </div>
     </div>
